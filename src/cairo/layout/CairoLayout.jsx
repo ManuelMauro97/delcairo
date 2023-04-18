@@ -3,7 +3,7 @@ import { ImageGallery } from "../components/ImageGallery"
 import { NavBar } from '../components/NavBar'
 import { Search, SearchIconWrapper, StyledInputBase } from "../constants/buscador"
 import SearchIcon from '@mui/icons-material/Search';
-import Logo from '../../../assets/logos/delCairo.png'
+import Logo from '../../../public/assets/logos/delCairo.png'
 import { CrearCuenta } from "../components/CrearCuenta";
 import { productos } from "../constants/data";
 import { menuList } from "../constants/menuList";
