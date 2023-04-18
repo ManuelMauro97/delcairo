@@ -1,8 +1,10 @@
+import CloeVerde from '../../assets/rinoneras/Cloe (verde militar).jpeg'
+
 export const productos = [
     {
         tipo: 'rinoneras',
         path: 'rinoneras1',
-      img: '/src/assets/rinoneras/Cloe (verde militar).jpeg',
+      img: CloeVerde,
       img2: '/src/assets/rinoneras/Cloe (verde militar) 2.jpeg',
       img3: '/src/assets/rinoneras/Cloe (verde militar) 3.jpeg',
       title: 'Cloe (verde militar)',
