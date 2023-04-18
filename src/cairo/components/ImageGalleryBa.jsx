@@ -17,18 +17,18 @@ import { useEffect } from "react";
 
 
 
-export const ImageGalleryBa = () => {
+export const ImageGalleryBa = ({ tipoProducto }) => {
 
   const dispatch = useDispatch();
 
   const tipo = useSelector(state => state.cairo.menuList);
 
-  const menuList = () => {
-    menuList.map(item)
-  }
+  // const menuList = () => {
+  //   menuList.map(item)
+  // }
 
   const handleTipo = () => {
-    dispatch(onSelectTipo(menuList))
+    dispatch(onSelectTipo(tipoProducto))
   }
 
   useEffect(() => {
@@ -37,9 +37,9 @@ export const ImageGalleryBa = () => {
   
 
   return (
-    <Grid justifyContent={"center"} maxWidth="100vw" padding={10} container>
-      {productos.filter( name => name.tipo.includes('bandoleras')).map((item) => (
-        <Card sx={{ maxWidth: 300, margin: "30px", ':hover': {cursor:'pointer'} }} key={item.img} component={RouterLink} to={`/${item.path}`} >
+    <Grid bgcolor={'white'} justifyContent={"center"} maxWidth="100vw" padding={10} container>
+      {productos.filter( name => name.tipo.includes(tipoProducto)).map((item) => (
+        <Card sx={{ maxWidth: 300, margin: "30px", ':hover': {cursor:'pointer'} }} key={item.img} component={RouterLink} to={`/producto/${item.path}`} >
         { item.stok === 0 ? (
           <div>
             <Typography variant="h6" align="center" color="error">SIN STOK</Typography>

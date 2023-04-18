@@ -36,7 +36,7 @@ export const NavBar = () => {
 
     const test = (
         <Stack direction={'column'} bgcolor='green'>
-            Puto el que lee
+            Test
         </Stack>
     )
     return (

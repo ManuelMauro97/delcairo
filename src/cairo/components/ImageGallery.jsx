@@ -23,10 +23,10 @@ export const ImageGallery = () => {
     const totalProducts = productos.length;
 
   return (
-    <Stack>
+    <Stack bgcolor={'white'}>
     <Grid justifyContent={"center"} maxWidth="100vw" padding={10} container>
       {productos.slice(0, showMore).map((item) => (
-        <Card sx={{ maxWidth: 300, margin: "30px", ':hover': {cursor:'pointer'} }} key={item.img} component={RouterLink} to={`/${item.path}`} >
+        <Card sx={{ maxWidth: 300, margin: "30px", ':hover': {cursor:'pointer'} }} key={item.img} component={RouterLink} to={`/producto/${item.path}`} >
           { item.stok === 0 ? (
           <div>
             <Typography variant="h6" align="center" color="error">SIN STOK</Typography>

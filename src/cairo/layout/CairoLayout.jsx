@@ -14,11 +14,11 @@ export const CairoLayout = ({children}) => {
   const navigate = useNavigate();
 
   const handleOptionSelected = (event, value) => {
-    navigate(`/${value.path}`)
+    navigate(`/producto/${value.path}`)
       };
 
   return (
-    <Stack height={'100vh'} flexDirection={'column'} sx={{ display: 'flex' }}>
+    <Stack bgcolor={'white'} height={'100vh'} flexDirection={'column'} sx={{ display: 'flex' }}>
         <Stack bgcolor={'black'} justifyContent='space-between' padding={1} sx={{ position: 'relative', height: '100px'}}>
             <Grid color={'white'} align='center'>Envíos a todo el país - Cruelty Free - 10% off abonando en efectivo/transferencia</Grid>
             <Grid color={'white'} sx={{ justifySelf: 'end', alignSelf: 'flex-end'}}>delcairoaccesorios@gmail.com</Grid>
